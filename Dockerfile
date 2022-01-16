@@ -7,4 +7,4 @@ RUN bundle install
 
 EXPOSE 9292
 
-CMD ["bundle", "exec", "shotgun", "--host", "0.0.0.0", "-p", "9292"]
+CMD ["bundle", "exec", "rackup", "--host", "0.0.0.0", "-p", "9292"]

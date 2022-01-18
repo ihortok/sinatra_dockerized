@@ -1,7 +1,8 @@
 FROM ruby:2.7.5
 
 WORKDIR /app
-COPY . /app
+COPY Gemfile /app/Gemfile
+COPY Gemfile.lock /app/Gemfile.lock
 RUN bundle install
 
 EXPOSE 9292
